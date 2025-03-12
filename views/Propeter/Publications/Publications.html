@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Publications.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Crear Publicación de Parqueadero</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Parkareas</a>
+  
+        <nav class="navbar">
+          <a href="/views/Propeter/PropeterHOME/PropeterHome.html">Regresar</a>
+        </nav>
+    </header>
+    <div class="form-container">
+        <form>
+            <h1 class="form-title">Publicando tu Parqueadero</h1>
+            <input type="text" class="form-input" id="ParkName" placeholder="Nombre del Parqueadero">
+            <label for="parking-image" class="form-label">Imagen del Parqueadero</label>
+            <input type="file" name="parking-image" class="form-input" id="image">
+            <h2 class="form-subtitle">¿Quienes Somos?</h2>
+            <textarea  class="form-textarea" placeholder="Escribe aquí" id="Subtittle1"></textarea>
+            <h2 class="form-subtitle">Servicios</h2>
+            <textarea class="form-textarea" placeholder="Escribe aquí" id="Services"></textarea>
+            <h2 class="form-subtitle">Costos</h2>
+            <textarea class="form-textarea" placeholder="Escribe aquí" id="Cost"></textarea>
+            <h2 class="form-subtitle">Horarios</h2>
+            <textarea class="form-textarea" placeholder="Escribe aquí" id="Time"></textarea>
+            <h2 class="form-subtitle">Capacidad del Parqueadero</h2>
+            <textarea class="form-textarea" placeholder="Escribe aquí" id="Capacity"></textarea>
+            <button type="submit" class="form-button" id="PublishButton">Publicar</button>
+        </form>
+    </div>
+    <script src="/views/Propeter/Publications/Publications.js" type="module"></script>
+</body>
+</html>

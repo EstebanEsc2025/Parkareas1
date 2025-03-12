@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserves.css">
+    <title>Reservas Actuales</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Parkareas</a>
+  
+        <nav class="navbar">
+          <a href="/views/Propeter/PropeterHOME/PropeterHome.html">Regresar</a>
+        </nav>
+    </header>
+    <h1>Reservas Actuales</h1>
+    <div class="main-content">
+        <div class="content-wrapper">
+            <div class="grid" id="grid">
+                <div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div>
+                <div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div>
+                <div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div>
+                <div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div><div class="cuadrito"></div>
+            </div>
+            <div class="info-box">
+                <p>Ubicaciones totales: <span id="total"></span></p>
+                <p>Ubicaciones usadas: <span id="used"></span></p>
+                <p>Ubicaciones sin usar: <span id="unused"></span></p>
+                <div class="button-container">
+                    <button class="btn btn-add" onclick="addCuadrito()">Añadir</button>
+                    <button id="deleteButton" class="btn btn-delete" onclick="deleteCuadrito()">Eliminar</button>
+                    <button id="markButton" class="btn btn-mark" onclick="toggleMarkMode()">Marcar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/views/Propeter/reserves/reserves.js" type="module"></script>
+    <script>
+        let markMode = false;
+
+        function updateCounters() {
+            const total = document.querySelectorAll('.cuadrito').length;
+            const used = document.querySelectorAll('.cuadrito.azul').length;
+            const unused = total - used;
+
+            document.getElementById('total').textContent = total;
+            document.getElementById('used').textContent = used;
+            document.getElementById('unused').textContent = unused;
+        }
+
+        function addCuadrito() {
+            const grid = document.getElementById('grid');
+            const newCuadrito = document.createElement('div');
+            newCuadrito.classList.add('cuadrito');
+            newCuadrito.addEventListener('click', handleCuadritoClick);
+            grid.appendChild(newCuadrito);
+            updateCounters();
+        }
+
+        function deleteCuadrito() {
+            const grid = document.getElementById('grid');
+            if (grid.lastElementChild) {
+                grid.removeChild(grid.lastElementChild);
+                updateCounters();
+            }
+        }
+
+        function toggleMarkMode() {
+            markMode = !markMode;
+            const markButton = document.getElementById('markButton');
+            if (markMode) {
+                markButton.style.backgroundColor = '#974e0d';
+            } else {
+                markButton.style.backgroundColor = '#f39c12';
+            }
+        }
+
+        function handleCuadritoClick(event) {
+            const cuadrito = event.target;
+            if (markMode) {
+                cuadrito.classList.toggle('azul');
+            }
+            updateCounters();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCounters();
+            const cuadritos = document.querySelectorAll('.cuadrito');
+            cuadritos.forEach(cuadrito => {
+                cuadrito.addEventListener('click', handleCuadritoClick);
+            });
+        });
+    </script>
+</body>
+</html>

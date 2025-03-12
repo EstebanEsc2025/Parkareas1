@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="PropeterHome.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    
+    <header class="header">
+      <section class="flex">
+        <h2 class="logo" id="title"></h2>
+      </section>
+    </header>
+
+    
+<section class="courses">
+  <div class="heading-container">
+  </div>
+  <div class="box-container">
+    <button class="custom-button" id="PublicationButton">
+        <img src="/images/undraw_new_entries_re_cffr.svg" alt="Image 1">
+        <span>Crear Publicación</span>
+    </button>
+    <button class="custom-button" id="reportsButton">
+        <img src="/images/undraw_resume_folder_re_e0bi.svg" alt="Image 2">
+        <span>Reportes</span>
+    </button>
+    <button class="custom-button" id="reviewsButton">
+        <img src="/images/undraw_web_search_re_efla.svg" alt="Image 3">
+        <span>Mirar Reseñas</span>
+    </button>
+    <button class="custom-button" id="manageParkingButton">
+        <img src="/images/undraw_electric_car_b-7-hl.svg" alt="Image 4">
+        <span>Administrar Parqueaderos</span>
+    </button>
+    <button class="custom-button" id="reservesButton">
+        <img src="/images/undraw_online_resume_re_ru7s.svg" alt="Image 5">
+        <span>Ver Reservas</span>
+    </button>
+    <button class="custom-button" id="agendasButton">
+      <img src="/images/undraw_chat_re_re1u.svg" alt="Image 5">
+      <span>Agendas del Parqueadero</span>
+  </button>
+</div>
+</section>
+
+
+    <nav class="sidebar">
+      <div class="logo-menu">
+        <h2 class="logo">Parkareas</h2>
+        <i class="bx bx-menu toggle-btn"></i>
+      </div>
+
+      <ul class="list">
+        <li class="list-item active">
+          <button>
+            <i class="bx bx-grid-alt"></i>
+            <span class="link-name" style="--i:1;">Barra Lateral</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button href="/views/Propeter/PropeterHOME/PropeterHome.html">
+            <i class="bx bxs-home"></i>
+            <span class="link-name" style="--i:2;">Inicio</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button id="profileButton2">
+            <i class="bx bxs-user"></i>
+            <span class="link-name" style="--i:3;" >Perfil</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button id="changePasswordButton">
+            <i class="bx bxs-key"></i>
+            <span class="link-name" style="--i:7;">Cambiar Contra</span>
+          </button>
+        </li>
+         <li class="list-item">
+          <button id="delete2">
+            <i class='bx bxs-trash'></i>
+            <span class="link-name" style="--i:7;">Borrar User</span>
+          </button>
+        </li>
+        <li class="list-item1">
+          <button id="PropeterlogoutButton">
+            <i class="bx bxs-arrow-to-right"></i>
+            <span class="link-name">Cerrar sesión</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <script type="module" src="/views/Propeter/PropeterHOME/PropeterHome.js"></script>
+    <script src="/views/Propeter/PropeterHOME/PropeterSidebar.js" type="module"></script>
+    <script type="module" src="#"></script>
+  </body>
+</html>

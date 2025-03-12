@@ -1,0 +1,141 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --red:#e74c3c;
+  --orange:#f39c12;
+  --light-color:#888;
+  --light-bg:#eee;
+  --black:#2c3e50;
+  --white:#fff;
+  --border:.1rem solid rgba(0,0,0,.2);
+}
+
+* {
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+  background-color: var(--main-color);
+  color:#fff;
+}
+
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 14vh;
+    padding: 10px 0 0 0;
+    background-color: rgb(0, 0, 0); 
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, 0.08);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-top: 16vh;
+     
+}
+
+header .logo{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    text-shadow: 0 0 110px rgba(151, 149, 149, 0.1);
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 130px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    background: #fff;
+    transform: translateY(50px);
+    opacity: 0.9;
+  }
+
+
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 110px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.form-subtitle {
+    font-size: 1.5em;
+    margin: 20px 0 10px 0;
+    color: #555;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #555;
+}

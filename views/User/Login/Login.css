@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 32px;
+    color: lightgray;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: #fffd;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    text-shadow: 0 0 110px rgba(151, 149, 149, 0.1);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/images/parqueadero\ elegante.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 60px rgba(151, 149, 149, 0.1);
+    color: #fffd;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: -5px 0 20px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 24px 0 15px;
+}
+
+.register-link p a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+
+    .logo {
+        font-size: 2.5vw;
+        color: lightgray;
+        text-decoration: none;
+        font-weight: 700;
+        pointer-events: none;
+    }
+
+    .navbar a {
+        font-size: 2vw;
+        color: #fffd;
+        text-decoration: none;
+        font-weight: 700;
+        width: 100%;
+        text-shadow: 0 0 3vw rgba(151, 149, 149, 0.1);
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(/images/parqueadero\ elegante.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wrapper {
+        width: 90%;
+        max-width: 500px;
+        background: transparent;
+        border: 3px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(2vw);
+        box-shadow: 0 0 3vw rgba(151, 149, 149, 0.1);
+        color: #fffd;
+        border-radius: 2vw;
+        padding: 5vw;
+        margin-top: 15vh;
+    }
+
+    .wrapper h1 {
+        font-size: 4vw;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper .input-box {
+        position: relative;
+        width: 100%;
+        height: 5vw;
+        margin: 5vw 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 4vw;
+        font-size: 2vw;
+        color: #fff;
+        padding: 4vw;
+    }
+
+    .input-box input::placeholder {
+        color: #fff;
+    }
+
+    .input-box i {
+        position: absolute;
+        right: 4vw;
+        top: 50%;
+        transform: translateY(-35%);
+        font-size: 4vw;
+    }
+
+    .wrapper .remember-forgot {
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        margin: -1vw 0 4vw;
+    }
+
+    .remember-forgot label input {
+        accent-color: #fff;
+        margin-right: 1vw;
+    }
+
+    .remember-forgot a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .remember-forgot a:hover {
+        text-decoration: underline;
+    }
+
+    .wrapper .btn {
+        width: 100%;
+        height: 8vw;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 4vw;
+        box-shadow: 0 0 2vw rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 2vw;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .wrapper .register-link {
+        font-size: 2vw;
+        text-align: center;
+        margin: 3vw 0 2vw;
+    }
+
+    .register-link p a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            padding: 20px 5%;
+        }
+
+        .logo {
+            font-size: 5vw;
+        }
+
+        .navbar a {
+            font-size: 4vw;
+            text-shadow: 0 0 3vw rgba(151, 149, 149, 0.1);
+        }
+
+        .wrapper {
+            width: 90%;
+            padding: 5vw;
+        }
+
+        .wrapper h1 {
+            font-size: 6vw;
+            margin-bottom: 8vw;
+        }
+
+        .wrapper .input-box {
+            height: 10vw;
+            margin: 6vw 0;
+        }
+
+        .input-box input {
+            border-radius: 7vw;
+            font-size: 4vw;
+            padding: 6vw;
+        }
+
+        .input-box i {
+            font-size: 6vw;
+            right: 6vw;
+        }
+
+        .wrapper .remember-forgot {
+            font-size: 3vw;
+            margin: 15vw 0 6vw;
+        }
+
+        .remember-forgot label input {
+            margin-right: 2vw;
+        }
+
+        .wrapper .btn {
+            height: 10vw;
+            border-radius: 7vw;
+            font-size: 4vw;
+            box-shadow: 0 0 4vw rgba(0, 0, 0, .1);
+        }
+
+        .wrapper .register-link {
+            font-size: 3vw;
+            margin: 6vw 0 4vw;
+        }
+    }
+
+
+}

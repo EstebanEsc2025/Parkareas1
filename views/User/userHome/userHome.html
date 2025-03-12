@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="userHome.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    
+    <header class="header">
+      <section class="flex">
+        <h2 class="logo" id="title"></h2>
+
+        <form class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            required
+            placeholder="Buscar parqueadero.."
+            maxlength="100"
+          />
+          <i class="bx bx-search-alt-2"></i>
+        </form>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+      </section>
+    </header>
+
+    
+<section class="courses">
+
+  <div class="heading-container" id="papas">
+  <h1 class="heading">Parqueaderos</h1>
+  
+</div>
+
+  <div class="box-container" id="publication">
+  
+
+</div>
+
+</section>
+
+    <nav class="sidebar">
+      <div class="logo-menu">
+        <h2 class="logo">Parkareas</h2>
+        <i class="bx bx-menu toggle-btn"></i>
+      </div>
+
+      <ul class="list">
+       
+        <li class="list-item">
+          <button href="/views/User/userHome/userHome.html">
+            <i class="bx bxs-home"></i>
+            <span class="link-name" style="--i:2;">Inicio</span>
+          </button>
+        </li>
+
+        <li class="list-item">
+          <button id="profileButton">
+            <i class="bx bxs-user"></i>
+            <span class="link-name" style="--i:3;" >Perfil</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button id="talkAdmin">
+            <i class="bx bx-chat"></i>
+            <span class="link-name" style="--i:4;">Administración</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button id="changePasswordButton">
+            <i class="bx bxs-key"></i>
+            <span class="link-name" style="--i:7;">Cambiar Contra</span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button>
+            <i class="bx bx-cog"></i>
+            <span class="link-name" style="--i:7;">Configuración</span>
+          </button>
+        </li>
+         <li class="list-item">
+          <button id="delete1">
+            <i class='bx bxs-trash'></i>
+            <span class="link-name" style="--i:7;">Borrar User</span>
+          </button>
+        </li>
+        <li class="list-item3" id="casa" >
+          
+        </li>
+        <li class="list-item1">
+          <button id="logoutButton">
+            <i class="bx bxs-arrow-to-right"></i>
+            <span class="link-name">Cerrar sesión</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <script type="module" src="/views/User/userHome/userHome.js"></script>
+    <script src="/views/User/userHome/sidebar.js" type="module"></script>
+    <script type="module" src="/views/User/Profile/profile.js"></script>
+  </body>
+</html>

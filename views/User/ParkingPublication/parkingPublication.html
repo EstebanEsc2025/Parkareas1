@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parkingPublication.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Parkareas</a>
+  
+        <nav class="navbar">
+          <a href="/views/User/userHome/userHome.html">Regresar</a>
+        </nav>
+      </header>
+    <div>
+        <h1 id="titleParking"></h1>
+        <div class="parking-info">
+            <img  alt="Parking Image" id="imageParking">
+            <div class="text-info">
+                <h2>¿Que Ofrecemos?</h2>
+                <p id="Subtittle"></p>
+                <h2>Servicios</h2>
+                <p id="services"></p>
+                <h2>Costos y Promociones</h2>
+                <p id="cost"></p>
+                <h2>Horarios</h2>
+                <p id="time"> </p>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="additional-info">
+            <div>
+                <span>Calificación:</span>
+                <div class="rating">
+                    <i class="bi bi-star-fill star"></i>
+                    <i class="bi bi-star-fill star"></i>
+                    <i class="bi bi-star-fill star"></i>
+                    <i class="bi bi-star-fill star"></i>
+                    <i class="bi bi-star-fill star"></i>
+                </div>
+            </div>
+            <div>
+                <span>Disponibilidad actual de espacio:</span>
+                <span id="capacity"></span>
+            </div>
+        <div class="review-container">
+            <textarea placeholder="  Deja tus comentarios aqui" id="reseña"></textarea>
+            <button class="submit-button" id="enviarReseña">Enviar</button>  
+            </div>
+        <div class="button-container">
+        <button id="AgendaButton">Agendar una cita para Afiliarse</button>
+        </div>
+    </div>
+
+    <script src="/views/User/ParkingPublication/parkingPublication.js" type="module"></script>
+</body>
+</html>

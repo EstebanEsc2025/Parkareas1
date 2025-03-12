@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --red:#e74c3c;
+  --orange:#f39c12;
+  --light-color:#888;
+  --light-bg:#eee;
+  --black:#2c3e50;
+  --white:#fff;
+  --border:.1rem solid rgba(0,0,0,.2);
+}
+
+* {
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+  background-color: var(--main-color);
+  color:#fff;
+}
+
+body {
+  background: whitesmoke;
+  padding-top: 16vh;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 14vh;
+    padding: 10px 0 0 0;
+    background-color: white; /* Asegúrate de que este color coincida con el fondo de tu encabezado */
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, 0.08);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-top: 16vh; /* Ajusta este valor al tamaño de tu encabezado */
+}
+
+header .logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    text-shadow: 0 0 110px rgba(151, 149, 149, 0.1);
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover{
+    background: var(--bg-color);
+    color: grey;
+    box-shadow: 5px 10px 30px rgba(85 85 85/ 20%);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0px;
+    padding-top: 40px;
+    color: #333;
+    font-size: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 80px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.grid-item button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.car-info {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.car-info img {
+    width: 550px;
+    height: 300px;
+    margin-right: 100px;
+}
+
+.car-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.car-info ul li {
+    margin-bottom: 5px;
+}
+
+.history-button {
+    position: fixed;
+    bottom: 29px;
+    right: 30px;
+    background-color: #3f3f41;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.history-button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f3f41;
+}
+

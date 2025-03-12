@@ -1,0 +1,152 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --red:#e74c3c;
+  --orange:#f39c12;
+  --light-color:#888;
+  --light-bg:#eee;
+  --black:#2c3e50;
+  --white:#fff;
+  --border:.1rem solid rgba(0,0,0,.2);
+}
+
+* {
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+  background-color: var(--main-color);
+  color:#fff;
+}
+
+body {
+  background: whitesmoke;
+  padding-top: 16vh;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-height: 14vh;
+    padding: 10px 0 0 0;
+    background-color: white; /* Asegúrate de que este color coincida con el fondo de tu encabezado */
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, 0.08);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-top: 16vh; /* Ajusta este valor al tamaño de tu encabezado */
+}
+
+header .logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    text-shadow: 0 0 110px rgba(151, 149, 149, 0.1);
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover{
+    background: var(--bg-color);
+    color: grey;
+    box-shadow: 5px 10px 30px rgba(85 85 85/ 20%);
+    border-radius: 10px;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: #1a1919;
+    margin-top: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.car-image {
+    width: 60%;
+    height: auto;
+    padding-right: 100px;
+}
+
+.car-details {
+    width: 50%;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    padding-top:20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group i {
+    margin-right: 10px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}

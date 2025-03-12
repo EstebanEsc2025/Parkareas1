@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+   --red:#e74c3c;
+   --orange:#f39c12;
+   --light-color:#888;
+   --light-bg:#eee;
+   --black:#2c3e50;
+   --white:#fff;
+   --border:.1rem solid rgba(0,0,0,.2);
+ }
+
+* {
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+  background-color: var(--main-color);
+  color:#fff;
+}
+
+body {
+  background: whitesmoke;
+  padding-top: 16vh;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    box-shadow: var(--border);
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--black);
+    margin-left: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.profile .role {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.profile .btn {
+    background-color: rgb(253, 255, 109);
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.profile .btn:hover {
+    background-color: #f3ef0fde;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.box {
+    background: var(--white);
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.box .box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.box .box-content i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.box .box-content span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.box .box-content p {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.box .inline-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background: rgb(253, 255, 109);
+    color: black;
+    border-radius: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+.box .inline-btn:hover {
+    background-color:  #f3ef0fde;
+}

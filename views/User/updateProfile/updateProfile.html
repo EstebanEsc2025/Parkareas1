@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updateProfile</title>
+    <link rel="stylesheet" href="updateProfile.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="navbar">
+            <a href="/views/User/userHome/userHome.html">Volver</a>
+        </nav>
+
+    </header>
+
+    <div class="wrapper">
+        <h1>Actualizar Perfil</h1>
+        <img alt="User Avatar" class="avatar" id="Pfp">
+
+
+    <form>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Nombre Completo" id="name">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-field">
+                <input type="number" placeholder="Documentación" id="documents">
+                <i class='bx bx-id-card'></i>
+            </div>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="number" placeholder="Numero Telefonico" id="number">
+                <i class='bx bxs-phone'></i>
+            </div>
+        </div>
+        <div class="input-field">
+            <input type="file" id="image">
+        </div>
+        <button id="updateProfile" type="submit" class="btn">Actualizar</button>
+    </form>
+    </div>
+</div>
+
+    <script src="/views/User/updateProfile/updateProfile.js" type="module"></script>
+</body>
+
+</html>
